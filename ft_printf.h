@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 15:38:21 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/08/01 23:43:13 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/08/02 16:09:24 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,15 @@ int		ft_printf(const char *str, ...);
 size_t	ft_strlen(const char *s);
 char	*ft_itoa(int n);
 char	*ft_unsighed_itoa(unsigned int n);
-void	caseofpersent(const char **str, va_list args);
-void	func_about_c(va_list args);
-void	func_about_s(va_list args);
-void	print_hex_upper(unsigned long int n);
-void	print_hex_lower(unsigned long int n);
-void	func_about_d(va_list args);
-void	func_about_u(va_list args);
-void	func_about_p(va_list args);
+void	caseofpersent(const char **str, va_list args, int *returnvalue);
+void	func_about_c(va_list args, int *returnvalue);
+void	func_about_s(va_list args, int *returnvalue);
+void	print_hex_upper(unsigned int n, int *returnvalue);
+void	print_hex_lower(unsigned int n, int *returnvalue);
+void	print_long_hex_lower(unsigned long n, int *returnvalue);
+void	func_about_d(va_list args, int *returnvalue);
+void	func_about_u(va_list args, int *returnvalue);
+void	func_about_p(va_list args, int *returnvalue);
 
 
 #endif                //위의 #ifndef 조건의 끝을 표시
