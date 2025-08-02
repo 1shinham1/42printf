@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 23:22:01 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/08/02 14:52:34 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/08/02 16:18:57 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	caseofpersent(const char **str, va_list args, int *returnvalue)
 	else if (**str == '%')
 	{
 		(*returnvalue)++;
-		write(1,"%%",1);
+		write(1, "%%", 1);
 	}
 	(*str)++;
 }

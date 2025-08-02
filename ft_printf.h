@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 15:38:21 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/08/02 16:09:24 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/08/02 16:18:29 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ void	print_long_hex_lower(unsigned long n, int *returnvalue);
 void	func_about_d(va_list args, int *returnvalue);
 void	func_about_u(va_list args, int *returnvalue);
 void	func_about_p(va_list args, int *returnvalue);
-
 
 #endif                //위의 #ifndef 조건의 끝을 표시
 /*

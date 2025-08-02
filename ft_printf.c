@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 15:31:38 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/08/02 15:08:02 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/08/02 16:15:45 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_printf(const char *str, ...)
 {
 	int		returnvalue;
-	va_list args;
+	va_list	args;
 
 	va_start(args, str);
 	returnvalue = 0;
@@ -24,8 +24,8 @@ int	ft_printf(const char *str, ...)
 		if (*str == '%')
 		{
 			str++;
-			caseofpersent(&str , args, &returnvalue);
-			continue;
+			caseofpersent(&str, args, &returnvalue);
+			continue ;
 		}
 		write(1, str, 1);
 		returnvalue++;
